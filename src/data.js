@@ -1,3 +1,11 @@
+import enterArrow from "src/assets/enterArrow.svg";
+import expressArrow from "src/assets/expressArrow.svg";
+import twitter from "src/assets/iconTwitter.svg";
+import substack from "src/assets/iconSubstack.svg";
+import linkedin from "src/assets/iconLinkedIn.svg";
+import github from "src/assets/iconGithub.svg";
+import behance from "src/assets/iconBehance.svg";
+
 const aboutData = [
     {
         dynamicText: "That's me! Click Next to lean more...",
@@ -52,17 +60,17 @@ const aboutData = [
                 },
                 {
                     type: "iconText",
-                    icon: "src/assets/enterArrow.svg",
+                    icon: enterArrow,
                     text: "Head of Operations & Support",
                 },
                 {
                     type: "iconText",
-                    icon: "src/assets/enterArrow.svg",
+                    icon: enterArrow,
                     text: "UI Designer, Editor, Writer",
                 },
                 {
                     type: "iconTextSurprise",
-                    icon: "src/assets/expressArrow.svg",
+                    icon: expressArrow,
                     text: "Got acqui-hired by Bull Bitcoin!",
                 },
             ],
@@ -77,12 +85,12 @@ const aboutData = [
                 },
                 {
                     type: "iconText",
-                    icon: "src/assets/enterArrow.svg",
+                    icon: enterArrow,
                     text: "Built & Managed Self-Custody Service",
                 },
                 {
                     type: "iconText",
-                    icon: "src/assets/enterArrow.svg",
+                    icon: enterArrow,
                     text: "Editor, Writer, Graphic Design",
                 },
             ],
@@ -106,12 +114,12 @@ const aboutData = [
                     },
                     {
                         type: "iconText",
-                        icon: "src/assets/enterArrow.svg",
+                        icon: enterArrow,
                         text: "Largest & oldest Bitcoin Meetup group.",
                     },
                     {
                         type: "iconText",
-                        icon: "src/assets/enterArrow.svg",
+                        icon: enterArrow,
                         text: "Did over 50 events & a conference.",
                     },
                 ],
@@ -126,12 +134,12 @@ const aboutData = [
                     },
                     {
                         type: "iconText",
-                        icon: "src/assets/enterArrow.svg",
+                        icon: enterArrow,
                         text: "First Bitcoin Meetup group in the state!",
                     },
                     {
                         type: "iconText",
-                        icon: "src/assets/enterArrow.svg",
+                        icon: enterArrow,
                         text: "Presenter, logistics, design.",
                     },
                 ],
@@ -149,7 +157,7 @@ const projectsData = [
             },
             {
                 type: "iconText",
-                icon: "src/assets/enterArrow.svg",
+                icon: enterArrow,
                 text: "Printed document for their Prime service.",
             },
             {
@@ -172,7 +180,7 @@ const projectsData = [
             },
             {
                 type: "iconText",
-                icon: "src/assets/enterArrow.svg",
+                icon: enterArrow,
                 text: "Images for their website & stationery.",
             },
             {
@@ -195,7 +203,7 @@ const projectsData = [
             },
             {
                 type: "iconText",
-                icon: "src/assets/enterArrow.svg",
+                icon: enterArrow,
                 text: "Paco travels the world using Bitcoin, Mexico was country no.38. I also went on this country-wide tour with him.",
             },
             {
@@ -218,7 +226,7 @@ const projectsData = [
             },
             {
                 type: "iconText",
-                icon: "src/assets/enterArrow.svg",
+                icon: enterArrow,
                 text: "Made the UI sleeker and added new features.",
             },
             {
@@ -241,7 +249,7 @@ const projectsData = [
             },
             {
                 type: "iconText",
-                icon: "src/assets/enterArrow.svg",
+                icon: enterArrow,
                 text: "Pick and compare Bitcoin wallets & features.",
             },
             {
@@ -259,27 +267,27 @@ const projectsData = [
 
 const footerData = [
     {
-        icon: "src/assets/iconTwitter.svg",
+        icon: twitter,
         text: "Twitter",
         url:"https://twitter.com/TristanBorgess",
     },
     {
-        icon: "src/assets/iconLinkedIn.svg",
+        icon: linkedin,
         text: "LinkedIn",
         url:"https://www.linkedin.com/in/tristan-borges-solari/",
     },
     {
-        icon: "src/assets/iconGithub.svg",
+        icon: github,
         text: "Github",
         url:"https://github.com/tristanborgess",
     },
     {
-        icon: "src/assets/iconBehance.svg",
+        icon: behance,
         text: "Behance",
         url:"https://www.behance.net/tristanborges1",
     },
     {
-        icon: "src/assets/iconSubstack.svg",
+        icon: substack,
         text: "Substack",
         url:"https://tristanborgess.substack.com/",
     },
