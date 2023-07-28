@@ -10,25 +10,25 @@ const Header = () => {
     );
 };
 
-const Nav = styled.div`
-    display: inline-flex;
-    padding-top: 1px;
+const Nav = styled.nav`
+    display: flex;
+    padding-top: 50px;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    gap: 2px;
+    align-items: center;
+    gap: 20px;
+    width: 100vw;
 `;
 
 const Title = styled.span`
     color: #110078;
-    leading-trim: both;
-    text-edge: cap;
     font-family: Wheaton;
     font-size: 85px;
     font-style: normal;
     font-weight: 400;
     line-height: 28.8px; /* 33.882% */
     letter-spacing: 0.22px;
+    text-shadow: -3px -1px 0px #CB00AA, 3px 1px 0px #0085FF;
 `;
 
 const Subtitle = styled.span`
@@ -39,6 +39,7 @@ const Subtitle = styled.span`
     font-weight: 400;
     line-height: 28.8px; /* 82.286% */
     letter-spacing: 6.35px;
+    text-shadow: -1px 1px 0px #CB00AA, 1px -1px 0px #0085FF;
 `;
 
 export default Header;
