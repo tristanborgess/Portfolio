@@ -1,12 +1,12 @@
-import enterArrow from "src/assets/enterArrow.svg";
-import expressArrow from "src/assets/expressArrow.svg";
-import twitter from "src/assets/iconTwitter.svg";
-import substack from "src/assets/iconSubstack.svg";
-import linkedin from "src/assets/iconLinkedIn.svg";
-import github from "src/assets/iconGithub.svg";
-import behance from "src/assets/iconBehance.svg";
+import enterArrow from './assets/enterArrow.svg';
+import expressArrow from "./assets/expressArrow.svg";
+import twitter from "./assets/iconTwitter.svg";
+import substack from "./assets/iconSubstack.svg";
+import linkedin from "./assets/iconLinkedIn.svg";
+import github from "./assets/iconGithub.svg";
+import behance from "./assets/iconBehance.svg";
 
-const aboutData = [
+export const aboutData = [
     {
         dynamicText: "That's me! Click Next to lean more...",
         content: [
@@ -147,7 +147,7 @@ const aboutData = [
     }
 ];
 
-const projectsData = [
+export const projectsData = [
     {
         dynamicText: "Excerpts from my freelance work...",
         content: [
@@ -265,7 +265,7 @@ const projectsData = [
     },
 ];
 
-const footerData = [
+export const footerData = [
     {
         icon: twitter,
         text: "Twitter",
@@ -292,5 +292,3 @@ const footerData = [
         url:"https://tristanborgess.substack.com/",
     },
 ];
-
-export { aboutData, projectsData, footerData };

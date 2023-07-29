@@ -4,6 +4,7 @@ import Tabs from './Tabs.jsx';
 import Pages from './Pages.jsx';
 import Navigation from './Navigation.jsx';
 import Form from './Form.jsx';
+import { aboutData, projectsData } from './data';
 
 const Content = () => {
     const [currentTab, setCurrentTab] = useState('About');

@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import React, { useState } from 'react';
 
-const Tabs = () => {
+const Tabs = ({ currentTab, changeTab }) => {
     const tabs = ['About', 'Projects', 'Contact'];
-
+    
     return (
         <TabsContainer>
             {tabs.map(tab => (
