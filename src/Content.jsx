@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import React, { useState, useEffect } from 'react';
-import Tabs from './Tabs.jsx';
 import Pages from './Pages.jsx';
-import Navigation from './Navigation.jsx';
 import Form from './Form.jsx';
 import { aboutData, projectsData } from './data';
 
@@ -22,12 +20,10 @@ const Content = () => {
     const currentData = currentTab === 'About' ? aboutData : projectsData;
 
     return (
-        <>
-            <Tabs currentTab={currentTab} changeTab={changeTab} />
+        <> 
             {currentTab !== 'Contact' ? (
                 <>
-                    <Pages currentTab={currentTab} changePage={currentPage} />
-                    <Navigation currentPage={currentPage} changePage={changePage} totalPages={currentData.length}/>
+                    <Pages currentTab={currentTab} changePage={currentPage} changeTab={changeTab} />
                 </>
             ) : ( 
                 <Form />

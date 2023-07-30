@@ -5,17 +5,44 @@ const Navigation = ({ currentPage, changePage, totalPages }) => {
 
     return (
         <NavigationContainer>
-            <button onClick={() => changePage(currentPage - 1)} disabled={currentPage === 0}>Previous</button>
-            <button onClick={() => changePage(currentPage + 1)} disabled={currentPage === totalPages - 1}>Next</button>
+            <Button onClick={() => changePage(currentPage - 1)} disabled={currentPage === 0}>Prev</Button>
+            <Button onClick={() => changePage(currentPage + 1)} disabled={currentPage === totalPages - 1}>Next</Button>
         </NavigationContainer>
     );
 };
 
 const NavigationContainer = styled.div`
   display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  background-color: #c0c0c0;
+  justify-content: flex-end;
+  margin: 15px;
+  gap: 16px;
 `;
+
+const Button = styled.button`
+    width: 75px;
+    height: 23px;
+    flex-shrink: 0;
+    background: #D9D9D9;
+    box-shadow: 0px 1px 0px 0px #000, 1px 1px 0px 0px #000, 1px 0px 0px 0px #000, 2px 2px 0px 0px rgba(244, 244, 244, 0.80) inset, -1px -1px 0px 0px rgba(0, 0, 0, 0.25) inset, 1px 1px 0px 0px #FFF inset;
+    color: #000;
+    font-family: 'VT323', monospace;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; /* 92.308% */
+    letter-spacing: 0.22px;
+
+    &:focus {
+        outline:none;
+        border: 1px solid #000;
+        box-shadow: 1px 1px 0px 0px #000, 0px 1px 0px 0px #000, 1px 0px 0px 0px #000;
+    }
+    &:active {
+        border: 1px solid #000;
+        box-shadow: 1px 1px 0px 0px #000, 0px 1px 0px 0px #000, 1px 0px 0px 0px #000;
+        
+        
+    }
+`
 
 export default Navigation;
