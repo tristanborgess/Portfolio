@@ -16,7 +16,7 @@ const App = () => {
       <Header />
       
       <Content />
-      <BackgroundContainer bgImage={bgImage} />
+      {/* <BackgroundContainer bgImage={bgImage} /> */}
       <Footer />
     
     </>

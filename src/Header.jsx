@@ -1,11 +1,13 @@
 import styled from "styled-components";
+import headerImage from "./assets/Header.svg"
 
 const Header = () => {
 
     return (
     <Nav>        
-        <Title>Tristan</Title>
-        <Subtitle>Borges Solari</Subtitle>
+        <img src={headerImage} alt='Header' />
+        {/* <Title>Tristan</Title>
+        <Subtitle>Borges Solari</Subtitle> */}
     </Nav>
     );
 };
@@ -13,10 +15,8 @@ const Header = () => {
 const Nav = styled.nav`
     display: flex;
     padding-top: 50px;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     width: 100%;
 `;
 

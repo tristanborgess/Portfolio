@@ -21,7 +21,7 @@ const Footer = () => {
 
 const FooterBackground = styled.div`
     background: linear-gradient(180deg, rgba(168, 209, 222, 0.00) 0%, rgba(0, 229, 147, 0.26) 29.17%, #41A6C6 100%); 
-    margin-top: -20px;
+    margin-top: -15px;
     
     
 `
@@ -46,10 +46,6 @@ const FooterContainer = styled.div`
     text-transform: uppercase;
     text-decoration:none;
     padding-top: -50px;
-    
-  
-    
-
 `;
 
 const Icon = styled.img`
