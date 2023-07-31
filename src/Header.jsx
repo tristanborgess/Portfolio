@@ -17,7 +17,7 @@ const Nav = styled.nav`
     justify-content: center;
     align-items: center;
     gap: 20px;
-    width: 100vw;
+    width: 100%;
 `;
 
 const Title = styled.span`

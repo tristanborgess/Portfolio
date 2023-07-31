@@ -5,6 +5,7 @@ import substack from "./assets/iconSubstack.svg";
 import linkedin from "./assets/iconLinkedIn.svg";
 import github from "./assets/iconGithub.svg";
 import behance from "./assets/iconBehance.svg";
+import profilePic from "./assets/TristanAbout1.svg"
 
 export const aboutData = [
     {
@@ -12,7 +13,7 @@ export const aboutData = [
         content: [
             {
                 type: "image",
-                src: " "
+                src: profilePic,
             },
         ],
     },
