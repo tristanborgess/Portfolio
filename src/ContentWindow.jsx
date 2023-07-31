@@ -8,8 +8,8 @@ const ContentWindow = ({ data }) => {
             return item.map(renderItem);
         }
 
-        if (item.type === 'image') {
-            return <Image key={index} src={item.url} alt="project" />;
+        if (item.type === 'profileImage') {
+            return <ProfileImage key={index} src={item.url} alt="" />;
         }
 
         switch(item.type) {
@@ -20,7 +20,20 @@ const ContentWindow = ({ data }) => {
             case 'currentlyText':
                 return <Text key={index}>{item.text}</Text>;
             case 'skillsList':
-                return <ul key={index}>{item.items.map((skill, i) => <li key={i}>{skill}</li>)}</ul>;
+                return (
+                    <div key={index}>
+                        <Text>{item.text}</Text>
+                        <Ul>
+                            {item.items.map((skill, i) => 
+                                <li key={i}>{skill}</li>
+                                )}
+                        </Ul>
+                    </div>
+                );
+            case 'positionText':
+                    return <PositionText key={index}>{item.text}</PositionText>;
+            case 'yearText':
+                    return <YearText key={index}>{item.text}</YearText>;
             case 'iconText':
             case 'iconTextSurprise':
                 return (
@@ -30,7 +43,7 @@ const ContentWindow = ({ data }) => {
                     </IconText>
                 );
             case 'image':
-                return <Image key={index} src={item.url} alt="project" />;
+                return <Image key={index} src={item.url} alt="" />;
             default:
                 return null;
         }
@@ -57,24 +70,89 @@ box-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 0.55) inset, 0px 2px 0px 0px rgba(0, 0
     `;
 
 const Header = styled.h1`
-  // Add your styles here
+    padding: 16px;
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.8px; /* 192% */
+    letter-spacing: 0.22px;
+    margin-bottom: -30px;
 `;
 
 const Text = styled.p`
-  // Add your styles here
+    color: #434343;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    
+    letter-spacing: 0.22px;
+    margin-left: 25px;
+    margin-bottom: -20px;
+    padding-top: -10px;
 `;
 
 const IconText = styled.div`
-  // Add your styles here
+    margin-left: 30px;
+    display: flex;
+    align-items: baseline;
+    margin-bottom: -10px;
 `;
 
 const Icon = styled.img`
-  // Add your styles here
+    margin-right: 5px;
 `;
 
 const Image = styled.img`
-    height: 146px; 
-  // Add your other styles here
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: -60px;
 `;
+
+const ProfileImage = styled.img`
+    padding-top: 2px;
+    height: 99%;
+    width: 99%;
+    margin-left: 2px;
+    z-index: -1;
+`;
+
+const PositionText = styled.p`
+    color: #434343;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.8px; /* 192% */
+    letter-spacing: 0.22px;
+    margin-left: 20px;
+    margin-bottom: -20px;
+    
+`;
+
+const YearText = styled.p`
+    color: #434343;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.8px; /* 192% */
+    letter-spacing: 0.22px;
+    margin-left: 25px;
+    margin-bottom: -20px;
+`;
+
+const Ul = styled.ul`
+    list-style: none;
+    color: #434343;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.8px; /* 192% */
+    letter-spacing: 0.22px;
+    margin-left: 50px;
+    margin-top: -28px;
+`
+
 
 export default ContentWindow;

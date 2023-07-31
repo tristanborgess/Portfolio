@@ -51,8 +51,10 @@ const Button = styled.button`
     &:active {
         border: 1px solid #000;
         box-shadow: 1px 1px 0px 0px #000, 0px 1px 0px 0px #000, 1px 0px 0px 0px #000;
-        
-        
+    }
+    &:disabled {
+        background: #D9D9D9;
+        opacity: 50%;
     }
 `
 

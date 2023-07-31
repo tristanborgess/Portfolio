@@ -1,9 +1,10 @@
 import styled from "styled-components";
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import Tabs from "./Tabs";
 import Navigation from "./Navigation";
 import ContentWindow from "./ContentWindow";
 import { aboutData, projectsData } from "./data";
+import Form from "./Form";
 
 const Pages = ({ currentTab, changeTab }) => {
     const [currentPage, setCurrentPage] = useState(0);
@@ -18,9 +19,18 @@ const Pages = ({ currentTab, changeTab }) => {
         <PagesContainer>
             <Tabs currentTab={currentTab} changeTab={changeTab} />
             <GreyWindow>
-                <DynamicText>{currentData[currentPage]?.dynamicText}</DynamicText>
+                {currentTab === 'Contact' ? (
+                        <>
+                            <DynamicText>Contact Me</DynamicText>
+                            <Form />
+                        </>
+                    ) : (
+                    <>
+                    <DynamicText>{currentData[currentPage]?.dynamicText}</DynamicText>
                     <ContentWindow data={currentData[currentPage]?.content} />
-                <Navigation currentPage={currentPage} changePage={changePage} totalPages={currentData.length}/>
+                    <Navigation currentPage={currentPage} changePage={changePage} totalPages={currentData.length}/>
+                    </>
+                    )}
             </GreyWindow>
         </PagesContainer>
         );
@@ -49,7 +59,16 @@ const Pages = ({ currentTab, changeTab }) => {
 `;
 
     const DynamicText = styled.div`
-        
+        color: rgba(0, 0, 0, 0.75);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28.8px; /* 240% */
+        letter-spacing: 0.22px;
+        padding-left: 16px;
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: -40px;
     `;
     // const ContentWindow = styled.div`
     //     width: 320px;

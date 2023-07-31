@@ -17,7 +17,7 @@ export const aboutData = [
         dynamicText: "That's me! Click Next to lean more...",
         content: [
             {
-                type: "image",
+                type: "profileImage",
                 url: profilePic,
             },
         ],
@@ -44,7 +44,7 @@ export const aboutData = [
             {
                 type: "skillsList",
                 text: "Skills :",
-                items: ["UI,UX & CX Design", "Explaining Bitcoin", "Event Organization", "Technical Writing", "Graphic Design", "Getting things done" ]
+                items: ["UI,UX & CX Design", "Explaining Bitcoin", "Event Organization", "Technical Writing", "Graphic Design" ]
             }
         ],
     },
@@ -138,11 +138,11 @@ export const aboutData = [
                         type: "yearText",
                         text: "2023-present",
                     },
-                    {
-                        type: "iconText",
-                        icon: enterArrow,
-                        text: "First Bitcoin Meetup group in the state!",
-                    },
+                    // {
+                    //     type: "iconText",
+                    //     icon: enterArrow,
+                    //     text: "First Bitcoin Meetup group in the state!",
+                    // },
                     {
                         type: "iconText",
                         icon: enterArrow,

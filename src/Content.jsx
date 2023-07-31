@@ -6,15 +6,15 @@ import { aboutData, projectsData } from './data';
 
 const Content = () => {
     const [currentTab, setCurrentTab] = useState('About');
-    const [currentPage, setCurrenPage] = useState(0);
+    const [currentPage, setCurrentPage] = useState(0);
 
     const changeTab = tab => {
         setCurrentTab(tab);
-        setcurrentPage(0);
+        setCurrentPage(0);
     };
 
     const changePage = (page) => {
-        setcurrentPage(page);
+        setCurrentPage(page);
     };
 
     const currentData = currentTab === 'About' ? aboutData : projectsData;
@@ -26,7 +26,8 @@ const Content = () => {
                     <Pages 
                         currentTab={currentTab} 
                         changePage={currentPage} 
-                        changeTab={changeTab} 
+                        setCurrentPage={setCurrentPage}
+                        changeTab={changeTab}  
                     />
                 </>
             ) : ( 
