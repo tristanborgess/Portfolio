@@ -25,7 +25,7 @@ const ContentWindow = ({ data }) => {
                         <Text>{item.text}</Text>
                         <Ul>
                             {item.items.map((skill, i) => 
-                                <li key={i}>{skill}</li>
+                                <Li key={i}>{skill}</Li>
                                 )}
                         </Ul>
                     </div>
@@ -37,10 +37,10 @@ const ContentWindow = ({ data }) => {
             case 'iconText':
             case 'iconTextSurprise':
                 return (
-                    <IconText key={index}>
+                    <IconContainer key={index}>
                         <Icon src={item.icon} alt="icon" />
-                        <Text>{item.text}</Text>
-                    </IconText>
+                        <IconText>{item.text}</IconText>
+                    </IconContainer>
                 );
             case 'image':
                 return <Image key={index} src={item.url} alt="" />;
@@ -70,33 +70,41 @@ box-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 0.55) inset, 0px 2px 0px 0px rgba(0, 0
     `;
 
 const Header = styled.h1`
-    padding: 16px;
+    padding: 15px 0 0 15px;
     color: #000;
-    font-size: 15px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28.8px; /* 192% */
+    line-height: 5px; /* 192% */
     letter-spacing: 0.22px;
-    margin-bottom: -30px;
+    margin-bottom: 10px;
 `;
 
 const Text = styled.p`
     color: #434343;
-    font-size: 15px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    
     letter-spacing: 0.22px;
-    margin-left: 25px;
-    margin-bottom: -20px;
-    padding-top: -10px;
+    margin: 5px 0 0 20px;
 `;
 
-const IconText = styled.div`
+
+const IconContainer = styled.div`
     margin-left: 30px;
     display: flex;
     align-items: baseline;
-    margin-bottom: -10px;
+    margin-top: 3px;
+`;
+
+const IconText = styled.div`
+    margin-left: 5px;
+    margin-bottom: 5px;
+    color: #434343;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.22px;
 `;
 
 const Icon = styled.img`
@@ -108,7 +116,7 @@ const Image = styled.img`
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    margin-top: -60px;
+    margin-top: 0px;
 `;
 
 const ProfileImage = styled.img`
@@ -121,13 +129,11 @@ const ProfileImage = styled.img`
 
 const PositionText = styled.p`
     color: #434343;
-    font-size: 15px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28.8px; /* 192% */
     letter-spacing: 0.22px;
-    margin-left: 20px;
-    margin-bottom: -20px;
+    margin: 15px 0 0 20px;
     
 `;
 
@@ -138,21 +144,24 @@ const YearText = styled.p`
     font-weight: 400;
     line-height: 28.8px; /* 192% */
     letter-spacing: 0.22px;
-    margin-left: 25px;
-    margin-bottom: -20px;
+    margin: 0px 0 0 20px;
 `;
 
 const Ul = styled.ul`
     list-style: none;
     color: #434343;
-    font-size: 15px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 28.8px; /* 192% */
     letter-spacing: 0.22px;
-    margin-left: 50px;
-    margin-top: -28px;
-`
+    margin: -21px 0 0 70px;
+    padding: 0;
+`;
+
+const Li = styled.li`
+    margin: 0px 0 0 0px;
+`;
 
 
 export default ContentWindow;

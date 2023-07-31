@@ -138,11 +138,11 @@ export const aboutData = [
                         type: "yearText",
                         text: "2023-present",
                     },
-                    // {
-                    //     type: "iconText",
-                    //     icon: enterArrow,
-                    //     text: "First Bitcoin Meetup group in the state!",
-                    // },
+                    {
+                        type: "iconText",
+                        icon: enterArrow,
+                        text: "First Bitcoin Meetup group in the state!",
+                    },
                     {
                         type: "iconText",
                         icon: enterArrow,
