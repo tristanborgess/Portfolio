@@ -40,6 +40,7 @@ const Header = styled.h1`
 `;
 
 const FormInput = styled.textarea`
+    border-radius: 2px;
     margin-bottom: 10px;
     background: #FFF;
     box-shadow: 0px 1px 0px 0px #000, 1px 1px 0px 0px #000, 1px 0px 0px 0px #000, 2px 2px 0px 0px rgba(244, 244, 244, 0.80) inset, -1px -1px 0px 0px rgba(0, 0, 0, 0.25) inset, 1px 1px 0px 0px #FFF inset;
@@ -68,6 +69,7 @@ const FormInput = styled.textarea`
     `;
 
 const MessageInput = styled.textarea`
+    border-radius: 2px;
     margin-bottom: 10px;
     height: 100px;
     background: #FFF;

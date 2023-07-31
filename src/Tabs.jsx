@@ -45,6 +45,7 @@ const TabButton = styled.button`
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0.22px;
+    text-align: center;
 
     &:nth-child(1) {
     z-index: 3; // brings the "About" tab to the top
