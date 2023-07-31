@@ -9,11 +9,11 @@ const Form = () => {
     return (
     <>
         <Header>Send me a message for any inquiries...</Header>
-        <FormContainer onSubmit={handleSubmit}>
-        <FormInput type="text" placeholder="Your Name" required/>
-        <FormInput type="email" placeholder="Your Email" required/>
-        <MessageInput type="text" placeholder="Message" required/>
-        </FormContainer>
+            <FormContainer onSubmit={handleSubmit}>
+                <FormInput type="text" placeholder="Your Name" required/>
+                <FormInput type="email" placeholder="Your Email" required/>
+                <MessageInput type="text" placeholder="Message" required/>
+            </FormContainer>
         <FormButton type="submit">Submit</FormButton>
     </>
     );
