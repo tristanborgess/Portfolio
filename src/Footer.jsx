@@ -37,8 +37,8 @@ const FooterContainer = styled.div`
     margin-left: auto;
     margin-right: auto;
     color: rgba(0, 0, 0, 0.45);
-    font-family: Wheaton;
-    font-size: 10px;
+    font-family: VT323;
+    font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: 28.8px; /* 360% */
