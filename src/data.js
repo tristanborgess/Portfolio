@@ -6,6 +6,11 @@ import linkedin from "./assets/iconLinkedIn.svg";
 import github from "./assets/iconGithub.svg";
 import behance from "./assets/iconBehance.svg";
 import profilePic from "./assets/TristanAbout1.svg"
+import project1 from "./assets/project1.png"
+import project2 from "./assets/Projects2.png"
+import project3 from "./assets/Projects3.jpeg"
+import project4 from "./assets/Projects4.png"
+import project5 from "./assets/Projects5.png"
 
 export const aboutData = [
     {
@@ -166,9 +171,8 @@ export const projectsData = [
                 src: "path_to_your_project_image.jpg",
             },
             {
-                type: "link",
-                text:"CLICK FOR MORE",
-                url: "",
+                type: "image",
+                url: project1,
             },
         ],
     },
@@ -189,9 +193,8 @@ export const projectsData = [
                 src: "path_to_your_project_image.jpg",
             },
             {
-                type: "link",
-                text:"CLICK FOR MORE",
-                url: "",
+                type: "image",
+                url: project2,
             },
         ],
     },
@@ -212,9 +215,8 @@ export const projectsData = [
                 src: "path_to_your_project_image.jpg",
             },
             {
-                type: "link",
-                text:"CLICK FOR MORE",
-                url: "",
+                type: "image",
+                url: project3,
             },
         ],
     },
@@ -235,9 +237,8 @@ export const projectsData = [
                 src: "path_to_your_project_image.jpg",
             },
             {
-                type: "link",
-                text:"CLICK FOR MORE",
-                url: "",
+                type: "image",
+                url: project4,
             },
         ],
     },
@@ -258,9 +259,8 @@ export const projectsData = [
                 src: "path_to_your_project_image.jpg",
             },
             {
-                type: "link",
-                text:"CLICK FOR MORE",
-                url: "",
+                type: "image",
+                url: project5,
             },
         ],
     },
