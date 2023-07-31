@@ -2,11 +2,22 @@ import styled from "styled-components";
 import React, { useState, useEffect } from 'react';
 
 const Navigation = ({ currentPage, changePage, totalPages }) => {
+    const handlePrev = () => {
+        if (currentPage > 0) {
+            changePage(currentPage-1);
+        }
+    };
+
+    const handleNext = () => {
+        if(currentPage < totalPages - 1) {
+            changePage(currentPage + 1);
+        }
+    };
 
     return (
         <NavigationContainer>
-            <Button onClick={() => changePage(currentPage - 1)} disabled={currentPage === 0}>Prev</Button>
-            <Button onClick={() => changePage(currentPage + 1)} disabled={currentPage === totalPages - 1}>Next</Button>
+            <Button onClick={handlePrev} disabled={currentPage === 0}>Prev</Button>
+            <Button onClick={handleNext} disabled={currentPage === totalPages - 1}>Next</Button>
         </NavigationContainer>
     );
 };

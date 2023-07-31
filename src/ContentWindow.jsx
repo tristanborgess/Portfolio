@@ -1,31 +1,44 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ContentWindow = ({ pageData }) => {
+const ContentWindow = ({ data }) => {
+
+    const renderItem = (item, index) => {
+        if (Array.isArray(item)) {
+            return item.map(renderItem);
+        }
+
+        if (item.type === 'image') {
+            return <Image key={index} src={item.url} alt="project" />;
+        }
+
+        switch(item.type) {
+            case 'header':
+                return <Header key={index}>{item.text}</Header>;
+            case 'fromText':
+            case 'basedText':
+            case 'currentlyText':
+                return <Text key={index}>{item.text}</Text>;
+            case 'skillsList':
+                return <ul key={index}>{item.items.map((skill, i) => <li key={i}>{skill}</li>)}</ul>;
+            case 'iconText':
+            case 'iconTextSurprise':
+                return (
+                    <IconText key={index}>
+                        <Icon src={item.icon} alt="icon" />
+                        <Text>{item.text}</Text>
+                    </IconText>
+                );
+            case 'image':
+                return <Image key={index} src={item.url} alt="project" />;
+            default:
+                return null;
+        }
+    };
+
     return (
         <ContentWindowContainer>
-            {pageData.content.map((item, index) => {
-                switch (item.type) {
-                    case 'header':
-                        return <Header key={index}>{item.text}</Header>;
-                    case 'fromText':
-                    case 'basedText':
-                    case 'currentlyText':
-                    case 'skillsList':
-                        return <Text key={index}>{item.text}</Text>;
-                    case 'iconText':
-                        return (
-                            <IconText key={index}>
-                                <Icon src={item.icon} alt={item.text} />
-                                <Text>{item.text}</Text>
-                            </IconText>
-                        );
-                    case 'image':
-                        return <Image key={index} src={item.url} alt="" />;
-                    default:
-                        return null;
-                }
-            })}
+            {data?.map(renderItem)}
         </ContentWindowContainer>
     );
 };

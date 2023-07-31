@@ -65,7 +65,7 @@ const TabButton = styled.button`
 
     &:focus {
         outline:none;
-        border: 1px solid #000;
+        /* border: 1px solid #000; */
         border-radius: 2px 2px 0px 0px;
         box-shadow: 0px -1px 0px 0px #000, 0px -1px 0px 0px #000, 1px 0px 0px 0px #000;
     }

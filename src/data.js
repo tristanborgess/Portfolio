@@ -18,7 +18,7 @@ export const aboutData = [
         content: [
             {
                 type: "image",
-                src: profilePic,
+                url: profilePic,
             },
         ],
     },
