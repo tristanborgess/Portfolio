@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
         }
     
         body {
-        heigth: auto;
+        height: auto;
     }
 `;
 

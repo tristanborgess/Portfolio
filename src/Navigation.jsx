@@ -30,6 +30,7 @@ const NavigationContainer = styled.div`
 `;
 
 const Button = styled.button`
+    cursor: pointer;
     width: 75px;
     height: 23px;
     flex-shrink: 0;
