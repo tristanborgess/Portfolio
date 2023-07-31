@@ -9,10 +9,11 @@ const Pages = ({ currentTab, changeTab, changePage }) => {
         <PagesContainer>
             <Tabs currentTab={currentTab} changeTab={changeTab} />
             <GreyWindow>
-                <ContentWindow>
-                    <div>
-                    </div>
-                </ContentWindow>
+                    <ContentWindow>
+                        <div>
+
+                        </div>
+                    </ContentWindow>
                 <Navigation />
             </GreyWindow>
         </PagesContainer>
@@ -51,6 +52,7 @@ const Pages = ({ currentTab, changeTab, changePage }) => {
         margin-left: auto;
         margin-right: auto;
         background: #FFF;
-box-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 0.55) inset, 0px 2px 0px 0px rgba(0, 0, 0, 0.55) inset, 1px 0px 0px 0px rgba(255, 255, 255, 0.50) inset, 0px 1px 0px 0px rgba(255, 255, 255, 0.50) inset, 1px 2px 0px 0px rgba(255, 255, 255, 0.35), 2px 1px 0px 0px rgba(255, 255, 255, 0.35);
-    `
+        box-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 0.55) inset, 0px 2px 0px 0px rgba(0, 0, 0, 0.55) inset, 1px 0px 0px 0px rgba(255, 255, 255, 0.50) inset, 0px 1px 0px 0px rgba(255, 255, 255, 0.50) inset, 1px 2px 0px 0px rgba(255, 255, 255, 0.35), 2px 1px 0px 0px rgba(255, 255, 255, 0.35);
+    `;
+
 export default Pages;

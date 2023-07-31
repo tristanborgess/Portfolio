@@ -23,7 +23,11 @@ const Content = () => {
         <> 
             {currentTab !== 'Contact' ? (
                 <>
-                    <Pages currentTab={currentTab} changePage={currentPage} changeTab={changeTab} />
+                    <Pages 
+                        currentTab={currentTab} 
+                        changePage={currentPage} 
+                        changeTab={changeTab} 
+                    />
                 </>
             ) : ( 
                 <Form />
