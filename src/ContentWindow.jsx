@@ -1,7 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
+import Form from './Form';
 
-const ContentWindow = ({ data }) => {
+const ContentWindow = ({ data, currentTab }) => {
+    if (currentTab === 'Contact') {
+        return (
+            <ContentWindowContainer>
+                <Form />
+            </ContentWindowContainer>
+        );
+    }
 
     const renderItem = (item, index) => {
         if (Array.isArray(item)) {

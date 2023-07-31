@@ -4,7 +4,6 @@ import Tabs from "./Tabs";
 import Navigation from "./Navigation";
 import ContentWindow from "./ContentWindow";
 import { aboutData, projectsData } from "./data";
-import Form from "./Form";
 
 const Pages = ({ currentTab, changeTab }) => {
     const [currentPage, setCurrentPage] = useState(0);
@@ -19,19 +18,10 @@ const Pages = ({ currentTab, changeTab }) => {
         <PagesContainer>
             <Tabs currentTab={currentTab} changeTab={changeTab} />
             <GreyWindow>
-                {currentTab === 'Contact' ? (
-                        <>
-                            <DynamicText>Contact Me</DynamicText>
-                            <Form />
-                        </>
-                    ) : (
-                    <>
-                    <DynamicText>{currentData[currentPage]?.dynamicText}</DynamicText>
-                    <ContentWindow data={currentData[currentPage]?.content} />
-                    <Navigation currentPage={currentPage} changePage={changePage} totalPages={currentData.length}/>
-                    </>
-                    )}
-            </GreyWindow>
+                <DynamicText>{currentTab === 'Contact' ? 'Contact Me' : currentData[currentPage]?.dynamicText}</DynamicText>
+                <ContentWindow data={currentData[currentPage]?.content} currentTab={currentTab} />
+                {currentTab !== 'Contact' && <Navigation currentPage={currentPage} changePage={changePage} totalPages={currentData.length}/>}
+            </GreyWindow>           
         </PagesContainer>
         );
     };
