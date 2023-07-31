@@ -89,7 +89,6 @@ const Text = styled.p`
     margin: 5px 0 0 20px;
 `;
 
-
 const IconContainer = styled.div`
     margin-left: 30px;
     display: flex;
@@ -116,7 +115,7 @@ const Image = styled.img`
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    margin-top: 0px;
+    margin-top: 20px;
 `;
 
 const ProfileImage = styled.img`

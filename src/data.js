@@ -168,10 +168,6 @@ export const projectsData = [
             },
             {
                 type: "image",
-                src: "path_to_your_project_image.jpg",
-            },
-            {
-                type: "image",
                 url: project1,
             },
         ],
@@ -187,10 +183,6 @@ export const projectsData = [
                 type: "iconText",
                 icon: enterArrow,
                 text: "Images for their website & stationery.",
-            },
-            {
-                type: "image",
-                src: "path_to_your_project_image.jpg",
             },
             {
                 type: "image",
@@ -212,10 +204,6 @@ export const projectsData = [
             },
             {
                 type: "image",
-                src: "path_to_your_project_image.jpg",
-            },
-            {
-                type: "image",
                 url: project3,
             },
         ],
@@ -234,10 +222,6 @@ export const projectsData = [
             },
             {
                 type: "image",
-                src: "path_to_your_project_image.jpg",
-            },
-            {
-                type: "image",
                 url: project4,
             },
         ],
@@ -253,10 +237,6 @@ export const projectsData = [
                 type: "iconText",
                 icon: enterArrow,
                 text: "Pick and compare Bitcoin wallets & features.",
-            },
-            {
-                type: "image",
-                src: "path_to_your_project_image.jpg",
             },
             {
                 type: "image",
