@@ -3,6 +3,7 @@ import styled from "styled-components";
 const Form = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
+        console.log(handleSubmit,'submitted')
 
     };
 
@@ -13,19 +14,20 @@ const Form = () => {
                 <FormInput type="text" placeholder="Your Name" required/>
                 <FormInput type="email" placeholder="Your Email" required/>
                 <MessageInput type="text" placeholder="Message" required/>
+                <FormButton type="submit">Submit</FormButton>
             </FormContainer>
-        <FormButton type="submit">Submit</FormButton>
+        
     </>
     );
 };
 
 const FormContainer = styled.form`
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  width: 244px;
-  margin-left: auto;
-  margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 244px;
+    margin-left: auto;
+    margin-right: auto;
 `;
 
 const Header = styled.h1`
