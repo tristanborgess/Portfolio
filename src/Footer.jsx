@@ -21,6 +21,7 @@ const Footer = () => {
 
 const FooterBackground = styled.div`
     background: linear-gradient(180deg, rgba(168, 209, 222, 0.00) 0%, rgba(0, 229, 147, 0.26) 29.17%, #41A6C6 100%); 
+    margin-top: -20px;
     
     
 `
@@ -35,7 +36,6 @@ const FooterContainer = styled.div`
     flex-shrink: 0;
     margin-left: auto;
     margin-right: auto;
-    background: linear-gradient(180deg, rgba(168, 209, 222, 0.00) 0%, rgba(0, 229, 147, 0.26) 29.17%, #41A6C6 100%);
     color: rgba(0, 0, 0, 0.45);
     font-family: Wheaton;
     font-size: 8px;
@@ -45,6 +45,9 @@ const FooterContainer = styled.div`
     letter-spacing: 0.22px;
     text-transform: uppercase;
     text-decoration:none;
+    padding-top: -50px;
+    
+  
     
 
 `;
