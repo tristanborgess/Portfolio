@@ -5,7 +5,7 @@ const Header = () => {
 
     return (
     <Nav>        
-        <img src={headerImage} alt='Header' />
+        <Img src={headerImage} alt='Header' />
         {/* <Title>Tristan</Title>
         <Subtitle>Borges Solari</Subtitle> */}
     </Nav>
@@ -18,8 +18,27 @@ const Nav = styled.nav`
     justify-content: center;
     align-items: center;
     width: 100%;
+
+    @media (min-width: 601px) {
+        padding-top: 60px;
+    }
+
+    @media (min-width: 1201px) {
+        padding-top: 70px;
+    } 
 `;
 
+const Img = styled.img`
+    width: 358px;
+
+    @media (min-width: 601px) {
+        width: 537px;    
+    }
+
+    @media (min-width: 1201px) {
+        width: 716px;    
+    } 
+`
 // const Title = styled.span`
 //     color: #110078;
 //     font-family: Wheaton;

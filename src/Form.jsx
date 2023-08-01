@@ -3,7 +3,6 @@ import styled from "styled-components";
 const Form = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(handleSubmit,'submitted')
 
     };
 
@@ -28,6 +27,16 @@ const FormContainer = styled.form`
     width: 244px;
     margin-left: auto;
     margin-right: auto;
+
+    @media (min-width: 601px) {
+        padding: 15px;
+        width: 366px;
+    }
+
+    @media (min-width: 1201px) {
+        padding: 20px;
+        width: 488px;
+    } 
 `;
 
 const Header = styled.h1`
@@ -36,9 +45,25 @@ const Header = styled.h1`
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 15px; /* 192% */
+    line-height: 15px; 
     letter-spacing: 0.22px;
     margin-bottom: 10px;
+
+    @media (min-width: 601px) {
+        padding: 22.5px 0 0 22.5px;
+        font-size: 24px;
+        line-height: 22.5px; 
+        letter-spacing: 0.33px;
+        margin-bottom: 15px;
+    }
+
+    @media (min-width: 1201px) {
+        padding: 30px 0 0 30px;
+        font-size: 32px;
+        line-height: 30px; 
+        letter-spacing: 0.44px;
+        margin-bottom: 20px;
+    } 
 `;
 
 const FormInput = styled.textarea`
@@ -57,6 +82,19 @@ const FormInput = styled.textarea`
     height: 23px;
     line-height: 23px;
     padding-left: 5px;
+
+    @media (min-width: 601px) {
+        margin-bottom: 15px;
+        box-shadow: 0px 1px 1px 0px #000, 1px 1px 1px 0px #000, 1px 0px 1px 0px #000, 2px 2px 1px 0px rgba(244, 244, 244, 0.80) inset, -1px -1px 1px 0px rgba(0, 0, 0, 0.25) inset, 1px 1px 1px 0px #FFF inset;
+        font-size: 21px;
+    }
+
+    @media (min-width: 1201px) {
+        margin-bottom: 20px;
+        box-shadow: 0px 1px 2px 0px #000, 1px 1px 2px 0px #000, 1px 0px 2px 0px #000, 2px 2px 2px 0px rgba(244, 244, 244, 0.80) inset, -1px -1px 2px 0px rgba(0, 0, 0, 0.25) inset, 1px 1px 2px 0px #FFF inset;
+        font-size: 28px;
+    } 
+
     &.active {
         border-radius: 2px 2px 0px 0px;
         box-shadow: 2px 2px 0px 0px rgba(240, 240, 240, 0.45) inset, 1px 1px 0px 0px rgba(255, 255, 255, 0.65) inset, 1px 0px 0px 0px #000;
@@ -88,6 +126,27 @@ const MessageInput = styled.textarea`
     resize: none;
     padding-left: 5px;
     padding-top: 5px;
+
+    @media (min-width: 601px) {
+        margin-bottom: 15px;
+        height: 150px;
+        box-shadow: 0px 1px 1px 0px #000, 1px 1px 1px 0px #000, 1px 0px 1px 0px #000, 2px 2px 1px 0px rgba(244, 244, 244, 0.80) inset, -1px -1px 1px 0px rgba(0, 0, 0, 0.25) inset, 1px 1px 1px 0px #FFF inset;
+        font-size: 21px;
+        letter-spacing: 0.33px;
+        padding-left: 7.5px;
+        padding-top: 7.5px;
+    }
+
+    @media (min-width: 1201px) {
+        margin-bottom: 20px;
+        height: 200px;
+        box-shadow: 0px 1px 2px 0px #000, 1px 1px 2px 0px #000, 1px 0px 2px 0px #000, 2px 2px 2px 0px rgba(244, 244, 244, 0.80) inset, -1px -1px 2px 0px rgba(0, 0, 0, 0.25) inset, 1px 1px 2px 0px #FFF inset;
+        font-size: 28px;
+        letter-spacing: 0.44px;
+        padding-left: 10px;
+        padding-top: 10px;
+    } 
+
     &.active {
         border-radius: 2px 2px 0px 0px;
         box-shadow: 2px 2px 0px 0px rgba(240, 240, 240, 0.45) inset, 1px 1px 0px 0px rgba(255, 255, 255, 0.65) inset, 1px 0px 0px 0px #000;
@@ -117,8 +176,28 @@ const FormButton = styled.button`
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
-    line-height: 12px; /* 92.308% */
+    line-height: 12px; 
     letter-spacing: 0.22px;
+
+    @media (min-width: 601px) {
+        margin: 22.5px 22.5px 33px 0;
+        width: 112.5px;
+        height: 34.5px;
+        box-shadow: 0px 1px 1px 0px #000, 1px 1px 1px 0px #000, 1px 0px 1px 0px #000, 2px 2px 1px 0px rgba(244, 244, 244, 0.80) inset, -1px -1px 1px 0px rgba(0, 0, 0, 0.25) inset, 1px 1px 1px 0px #FFF inset;
+        font-size: 19.5px;
+        line-height: 18px; 
+        letter-spacing: 0.33px;
+    }
+
+    @media (min-width: 1201px) {
+        margin: 30px 30px 44px 0;
+        width: 150px;
+        height: 46px;
+        box-shadow: 0px 1px 2px 0px #000, 1px 1px 2px 0px #000, 1px 0px 2px 0px #000, 2px 2px 2px 0px rgba(244, 244, 244, 0.80) inset, -1px -1px 2px 0px rgba(0, 0, 0, 0.25) inset, 1px 1px 2px 0px #FFF inset;
+        font-size: 26px;
+        line-height: 24px; 
+        letter-spacing: 0.44px;
+    } 
 
     &:focus {
         outline:none;

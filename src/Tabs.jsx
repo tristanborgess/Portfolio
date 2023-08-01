@@ -26,6 +26,14 @@ const TabsContainer = styled.div`
     margin-left: auto;
     margin-right: auto;
     flex-shrink: 0;
+
+    @media (min-width: 601px) {
+        height: 28.5px;
+}
+
+    @media (min-width: 1201px) {
+        height: 38px;
+} 
 `;
 
 const TabButton = styled.button`
@@ -47,17 +55,31 @@ const TabButton = styled.button`
     letter-spacing: 0.22px;
     text-align: center;
 
+    @media (min-width: 601px) {
+        height: 28.5px;
+        width: 81px;
+        font-size: 19.5px;
+        box-shadow: -1px -1px 1px 0px rgba(0, 0, 0, 0.65) inset, -2px -2px 1px 0px rgba(0, 0, 0, 0.25) inset, 2px 2px 1px 0px rgba(240, 240, 240, 0.45) inset, 1px 1px 1px 0px rgba(255, 255, 255, 0.65) inset;
+}
+
+    @media (min-width: 1201px) {
+        height: 38px;
+        width: 108px;
+        font-size: 26px;
+        box-shadow: -1px -1px 2px 0px rgba(0, 0, 0, 0.65) inset, -2px -2px 2px 0px rgba(0, 0, 0, 0.25) inset, 2px 2px 2px 0px rgba(240, 240, 240, 0.45) inset, 1px 1px 2px 0px rgba(255, 255, 255, 0.65) inset;
+} 
+
     &:nth-child(1) {
-    z-index: 3; // brings the "About" tab to the top
-  }
+        z-index: 3; // brings the "About" tab to the top
+    }
 
-  &:nth-child(2) {
-    z-index: 2; // puts the "Projects" tab in the middle
-  }
+    &:nth-child(2) {
+        z-index: 2; // puts the "Projects" tab in the middle
+    }
 
-  &:nth-child(3) {
-    z-index: 1; // puts the "Contact" tab at the bottom
-  }
+    &:nth-child(3) {
+        z-index: 1; // puts the "Contact" tab at the bottom
+    }
 
     &.active {
         border-radius: 2px 2px 0px 0px;
