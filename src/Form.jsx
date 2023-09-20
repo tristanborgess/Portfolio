@@ -1,10 +1,38 @@
 import styled from "styled-components";
 
 const Form = () => {
-    const handleSubmit = (e) => {
-        e.preventDefault();
+const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    const name = e.target[0].value;
+    const email = e.target[1].value;
+    const message = e.target[2].value;
 
+    const data = {
+    name,
+    email,
+    message,
     };
+
+    try {
+    const response = await fetch('/api/submitForm', {
+        method: 'POST',
+        headers: {
+        'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    });
+    
+    if (response.ok) {
+        console.log('Form submitted successfully');
+        // You can reset the form or navigate the user to a thank-you page
+    } else {
+        console.log('Failed to submit form');
+    }
+    } catch (error) {
+    console.log('An error occurred:', error);
+    }
+};      
 
     return (
     <>
@@ -98,14 +126,12 @@ const FormInput = styled.input`
 
     &.active {
         border-radius: 2px 2px 0px 0px;
-        box-shadow: 2px 2px 0px 0px rgba(240, 240, 240, 0.45) inset, 1px 1px 0px 0px rgba(255, 255, 255, 0.65) inset, 1px 0px 0px 0px #000;
     }
 
     &:focus {
         outline:none;
-        /* border: 1px solid #000; */
+        border: 1px solid #000;
         border-radius: 2px 2px 0px 0px;
-        box-shadow: 0px -1px 0px 0px #000, 0px -1px 0px 0px #000, 1px 0px 0px 0px #000;
     }
     `;
 
@@ -151,14 +177,12 @@ const MessageInput = styled.textarea`
 
     &.active {
         border-radius: 2px 2px 0px 0px;
-        box-shadow: 2px 2px 0px 0px rgba(240, 240, 240, 0.45) inset, 1px 1px 0px 0px rgba(255, 255, 255, 0.65) inset, 1px 0px 0px 0px #000;
     }
 
     &:focus {
         outline:none;
-        /* border: 1px solid #000; */
+        border: 1px solid #000;
         border-radius: 2px 2px 0px 0px;
-        box-shadow: 0px -1px 0px 0px #000, 0px -1px 0px 0px #000, 1px 0px 0px 0px #000;
     }
     `;
 
