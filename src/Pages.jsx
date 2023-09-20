@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import React, { useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import Tabs from "./Tabs";
 import Navigation from "./Navigation";
 import ContentWindow from "./ContentWindow";
-import { aboutData, projectsData } from "./data";
+import { aboutData, designData, codeData } from "./data";
 
 const Pages = ({ currentTab, changeTab }) => {
     const [currentPage, setCurrentPage] = useState(0);
@@ -12,7 +12,11 @@ const Pages = ({ currentTab, changeTab }) => {
         setCurrentPage(page);
     };
 
-    const currentData = currentTab === 'About' ? aboutData : projectsData;
+    useEffect(() => {
+        setCurrentPage(0);
+    }, [currentTab]);
+
+    const currentData = currentTab === 'About' ? aboutData : currentTab === 'Design' ? designData : codeData;
 
     return (
         <PagesContainer>

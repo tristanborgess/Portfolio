@@ -11,6 +11,10 @@ import project2 from "./assets/Projects2.png"
 import project3 from "./assets/Projects3.jpeg"
 import project4 from "./assets/Projects4.png"
 import project5 from "./assets/Projects5.png"
+import code1 from "./assets/code1.png";
+import code2 from "./assets/code2.png";
+import code3 from "./assets/code3.png";
+import code4 from "./assets/code4.png";
 
 export const aboutData = [
     {
@@ -39,7 +43,7 @@ export const aboutData = [
             },
             {
                 type: "currentlyText",
-                text: "Currently : Studying Web Development",
+                text: "Currently : Building",
             },
             {
                 type: "skillsList",
@@ -153,7 +157,7 @@ export const aboutData = [
     }
 ];
 
-export const projectsData = [
+export const designData = [
     {
         dynamicText: "Excerpts from my freelance work...",
         content: [
@@ -169,6 +173,10 @@ export const projectsData = [
             {
                 type: "image",
                 url: project1,
+            },
+            {
+                type: "link",
+                url: "https://indd.adobe.com/view/b124c6c6-904f-4cf0-b403-b2b2b43ea892",
             },
         ],
     },
@@ -188,6 +196,10 @@ export const projectsData = [
                 type: "image",
                 url: project2,
             },
+            {
+                type: "link",
+                url: "https://www.thebitcoinway.com/",
+            },
         ],
     },
     {
@@ -200,11 +212,15 @@ export const projectsData = [
             {
                 type: "iconText",
                 icon: enterArrow,
-                text: "Paco travels the world using Bitcoin, Mexico was country no.38. I also went on this country-wide tour with him.",
+                text: "Paco did a tour of Mexico as part of hiw world travels using Bitcoin.",
             },
             {
                 type: "image",
                 url: project3,
+            },
+            {
+                type: "link",
+                url: "https://x.com/RunwithBitcoin/status/1642525598672121858?s=20",
             },
         ],
     },
@@ -224,6 +240,10 @@ export const projectsData = [
                 type: "image",
                 url: project4,
             },
+            {
+                type: "link",
+                url: "https://www.behance.net/gallery/156650859/BTC-OTC-Exchange-app",
+            },
         ],
     },
     {
@@ -241,6 +261,101 @@ export const projectsData = [
             {
                 type: "image",
                 url: project5,
+            },
+            {
+                type: "link",
+                url: "https://www.behance.net/gallery/148365073/Choose-a-Wallet",
+            },
+        ],
+    },
+];
+
+export const codeData = [
+    {
+        dynamicText: "Some projects I built...",
+        content: [
+            {
+                type: "header",
+                text: "Dodging Game",
+            },
+            {
+                type: "iconText",
+                icon: enterArrow,
+                text: "Stay alive by dodging burgers!",
+            },
+            {
+                type: "image",
+                url: code1,
+            },
+            {
+                type: "link",
+                url: "https://project-js-nyan-cat-theta.vercel.app/",
+            },
+        ],
+    },
+    {
+        dynamicText: "Experimenting with React Effects",
+        content: [
+            {
+                type: "header",
+                text: "Cookie-clicker game",
+            },
+            {
+                type: "iconText",
+                icon: enterArrow,
+                text: "Pump your cookie production",
+            },
+            {
+                type: "image",
+                url: code2,
+            },
+            {
+                type: "link",
+                url: "https://react-effects-navy.vercel.app/game",
+            },
+        ],
+    },
+    {
+        dynamicText: "Using React State",
+        content: [
+            {
+                type: "header",
+                text: "Typehead for booklist",
+            },
+            {
+                type: "iconText",
+                icon: enterArrow,
+                text: "Search through a list of books!",
+            },
+            {
+                type: "image",
+                url: code3,
+            },
+            {
+                type: "link",
+                url: "https://react-state-p2-five.vercel.app/",
+            },
+        ],
+    },
+    {
+        dynamicText: "Getting a hang of the React ecosystem",
+        content: [
+            {
+                type: "header",
+                text: "Shop at the Fruit Emporium",
+            },
+            {
+                type: "iconText",
+                icon: enterArrow,
+                text: "Responsive e-commerce for fruit!",
+            },
+            {
+                type: "image",
+                url: code4,
+            },
+            {
+                type: "link",
+                url: "https://react-ecosystem-black.vercel.app/",
             },
         ],
     },

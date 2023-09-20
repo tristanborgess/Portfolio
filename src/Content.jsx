@@ -1,7 +1,6 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Pages from './Pages.jsx';
-import { aboutData, projectsData } from './data';
 
 const Content = () => {
     const [currentTab, setCurrentTab] = useState('About');
