@@ -52,6 +52,15 @@ const ContentWindow = ({ data, currentTab }) => {
                 );
             case 'image':
                 return <Image key={index} src={item.url} alt="" />;
+            case 'link':
+            return (
+                <LinkText key={index}>
+                    {item.text}{''}
+                    <a href={item.url} target="_blank" rel="nooTextener noreferrer">
+                    Take a look...
+                    </a>
+                </LinkText>
+            );
             default:
                 return null;
         }
@@ -136,6 +145,31 @@ const Text = styled.p`
         font-size: 28px;   
         letter-spacing: 0.44px;
         margin: 10px 0 0 40px;
+    } 
+`;
+
+const LinkText = styled.div`
+    color: #434343;
+    text-align: center;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.22px;
+    margin-top: 15px;
+    a, a:hover, a:visited, a:active {
+        color: #0d1a66;
+    }
+    
+
+    @media (min-width: 601px) {
+        font-size: 16px;   
+        letter-spacing: 0.33px;
+    }
+
+    @media (min-width: 1201px) {
+        font-size: 21px;   
+        letter-spacing: 0.44px;
+        
     } 
 `;
 

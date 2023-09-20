@@ -72,11 +72,6 @@ const Button = styled.button`
         letter-spacing: 0.44px;
     }
 
-    &:focus {
-        outline:none;
-        border: 1px solid #000;
-        box-shadow: 1px 1px 0px 0px #000, 0px 1px 0px 0px #000, 1px 0px 0px 0px #000;
-    }
     &:active {
         border: 1px solid #000;
         box-shadow: 1px 1px 0px 0px #000, 0px 1px 0px 0px #000, 1px 0px 0px 0px #000;

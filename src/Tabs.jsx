@@ -2,7 +2,7 @@ import styled from "styled-components";
 import React, { useState } from 'react';
 
 const Tabs = ({ currentTab, changeTab, setCurrentPage }) => {
-    const tabs = ['About', 'Projects', 'Contact'];
+    const tabs = ['About', 'Design', 'Code', 'Contact'];
     
     return (
         <TabsContainer>
@@ -70,27 +70,24 @@ const TabButton = styled.button`
 } 
 
     &:nth-child(1) {
-        z-index: 3; // brings the "About" tab to the top
+        z-index: 4; // brings the "About" tab to the top
     }
 
     &:nth-child(2) {
-        z-index: 2; // puts the "Projects" tab in the middle
+        z-index: 3; // puts the "Design" tab in the middle
     }
 
     &:nth-child(3) {
+        z-index: 2; // puts the "Code" tab in the middle
+    }
+
+    &:nth-child(4) {
         z-index: 1; // puts the "Contact" tab at the bottom
     }
 
     &.active {
         border-radius: 2px 2px 0px 0px;
         box-shadow: 2px 2px 0px 0px rgba(240, 240, 240, 0.45) inset, 1px 1px 0px 0px rgba(255, 255, 255, 0.65) inset, 1px 0px 0px 0px #000;
-    }
-
-    &:focus {
-        outline:none;
-        /* border: 1px solid #000; */
-        border-radius: 2px 2px 0px 0px;
-        box-shadow: 0px -1px 0px 0px #000, 0px -1px 0px 0px #000, 1px 0px 0px 0px #000;
     }
 `;
 
