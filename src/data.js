@@ -11,10 +11,10 @@ import project2 from "./assets/Projects2.png"
 import project3 from "./assets/Projects3.jpeg"
 import project4 from "./assets/Projects4.png"
 import project5 from "./assets/Projects5.png"
-import code1 from "./assets/code1.png";
-import code2 from "./assets/code2.png";
-import code3 from "./assets/code3.png";
-import code4 from "./assets/code4.png";
+import code1 from "./assets/Code1.png";
+import code2 from "./assets/Code2.png";
+import code3 from "./assets/Code3.png";
+import code4 from "./assets/Code4.png";
 
 export const aboutData = [
     {
