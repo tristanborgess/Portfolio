@@ -66,7 +66,8 @@ const Header = styled.h1`
     } 
 `;
 
-const FormInput = styled.textarea`
+const FormInput = styled.input`
+    -webkit-appearance: none;
     border-radius: 2px;
     margin-bottom: 10px;
     background: #FFF;
@@ -109,6 +110,7 @@ const FormInput = styled.textarea`
     `;
 
 const MessageInput = styled.textarea`
+    -webkit-appearance: none;
     border-radius: 2px;
     margin-bottom: 10px;
     height: 100px;
