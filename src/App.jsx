@@ -5,6 +5,8 @@ import Content from './Content.jsx';
 import Footer from './Footer.jsx';
 import styled from 'styled-components';
 import bgImage from './assets/001.jpg';
+import { Helmet } from 'react-helmet';
+import preview from './assets/socialPreview.png';
 
 
 const App = () => {
@@ -12,6 +14,11 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
+      <Helmet>
+      <meta property="og:title" content="Tristan Borges Solari" />
+      <meta property="og:description" content="Learn a bit about me and my design and coding work!" />
+      <meta property="og:image" content={preview} />
+      </Helmet>
         <Header />
         <Content />
         {/* <BackgroundContainer bgImage={bgImage} /> */}
