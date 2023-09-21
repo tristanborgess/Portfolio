@@ -22,7 +22,7 @@ const Pages = ({ currentTab, changeTab }) => {
         <PagesContainer>
             <Tabs currentTab={currentTab} changeTab={changeTab} />
             <GreyWindow>
-                <DynamicText>{currentTab === 'Contact' ? 'Get in touch!' : currentData[currentPage]?.dynamicText}</DynamicText>
+                <DynamicText>{currentTab === 'Contact' ? 'Reach out on Twitter or LinkedIn (form is down)...' : currentData[currentPage]?.dynamicText}</DynamicText>
                 <ContentWindow data={currentData[currentPage]?.content} currentTab={currentTab} />
                 {currentTab !== 'Contact' && <Navigation currentPage={currentPage} changePage={changePage} totalPages={currentData.length}/>}
             </GreyWindow>           

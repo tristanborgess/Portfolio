@@ -9,9 +9,9 @@ const { name, email, message } = req.body;
 
 const data = {
     fields: {
-    "Name": name,
-    "Email": email,
-    "Message": message,
+    "Name": Name,
+    "Email": Email,
+    "Message": Message,
     },
 };
 
@@ -29,6 +29,6 @@ try {
     res.status(200).json({ id: response.data.id });
 } catch (error) {
     console.error("Error inserting record: ", error);
-    res.status(500).json({ error: "Failed to insert record" });
+    res.status(500).json({ error: `Failed to insert record: ${error.message}` });
 }
 };

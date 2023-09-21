@@ -15,7 +15,7 @@ const handleSubmit = async (e) => {
     };
 
     try {
-    const response = await fetch('/api/submitForm', {
+    const response = await fetch('./api/submitForm', {
         method: 'POST',
         headers: {
         'Content-Type': 'application/json',
@@ -27,7 +27,7 @@ const handleSubmit = async (e) => {
         console.log('Form submitted successfully');
         // You can reset the form or navigate the user to a thank-you page
     } else {
-        console.log('Failed to submit form');
+        console.error('Failed to submit form');
     }
     } catch (error) {
     console.log('An error occurred:', error);
