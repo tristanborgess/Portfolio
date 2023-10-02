@@ -2,11 +2,23 @@
 <html lang="en">
   <head>
     <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet'>
+    <link rel="icon" type="image/svg+xml" href="/iconGithub.svg" />
+
     <meta property="og:title" content="Tristan Borges Solari" />
     <meta property="og:description" content="Take a look at what I'm up to and what I've done..." />
     <meta property="og:image" content='https://www.borgessolari.com/socialPreview.png' />
     <meta property="og:type" content='website' />
     <meta property="og:url" content='https://www.borgessolari.com/' />
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("%VITE_EMAILJS_PUBLIC_KEY%");
+    })();
+    </script>
+
     <style>
     body {
         font-family: 'VT323';font-size: 22px;
@@ -14,7 +26,7 @@
     }
     </style>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/iconGithub.svg" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tristan Borges Solari</title>
   </head>
