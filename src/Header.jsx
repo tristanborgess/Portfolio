@@ -27,7 +27,7 @@ const Nav = styled.nav`
 `;
 
 const Img = styled.img`
-    width: 358px;
+    width: 411.7px;
 
     @media (min-width: 601px) {
         width: 537px;    

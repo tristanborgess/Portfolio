@@ -22,7 +22,7 @@ const Tabs = ({ currentTab, changeTab, setCurrentPage }) => {
 const TabsContainer = styled.div`
     display: flex;
     width: 100%;
-    height: 19px;
+    height: 21.85px;
     margin-left: auto;
     margin-right: auto;
     flex-shrink: 0;
@@ -40,8 +40,8 @@ const TabButton = styled.button`
     margin-right: -4px;
     justify-content: center;
     align-items: center;
-    width: 54px;
-    height: 19px;
+    width: 62.1px;
+    height: 21.85px;
     flex-shrink: 0;
     border-radius: 2px 2px 0px 0px;
     border-style: none;
@@ -49,7 +49,7 @@ const TabButton = styled.button`
     box-shadow: -1px -1px 0px 0px rgba(0, 0, 0, 0.65) inset, -2px -2px 0px 0px rgba(0, 0, 0, 0.25) inset, 2px 2px 0px 0px rgba(240, 240, 240, 0.45) inset, 1px 1px 0px 0px rgba(255, 255, 255, 0.65) inset;
     color: #000;
     font-family: 'VT323', monospace;
-    font-size: 13px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0.22px;

@@ -22,7 +22,7 @@ const Pages = ({ currentTab, changeTab }) => {
         <PagesContainer>
             <Tabs currentTab={currentTab} changeTab={changeTab} />
             <GreyWindow>
-                <DynamicText>{currentTab === 'Contact' ? 'Reach out on Twitter or LinkedIn (form is down)...' : currentData[currentPage]?.dynamicText}</DynamicText>
+                <DynamicText>{currentTab === 'Contact' ? "Let's connect!" : currentData[currentPage]?.dynamicText}</DynamicText>
                 <ContentWindow data={currentData[currentPage]?.content} currentTab={currentTab} />
                 {currentTab !== 'Contact' && <Navigation currentPage={currentPage} changePage={changePage} totalPages={currentData.length}/>}
             </GreyWindow>           
@@ -31,7 +31,7 @@ const Pages = ({ currentTab, changeTab }) => {
     };
 
     const PagesContainer = styled.div`
-        width: 350px;
+        width: 402.5px;
         margin-top: 30px;
         display: flex;
         flex-direction: column;
@@ -55,8 +55,8 @@ const Pages = ({ currentTab, changeTab }) => {
         margin-top: -2px;
         border-style: none;
         border-radius: 2px;
-        width: 350px;
-        height: 372px;
+        width: 402.5px;
+        height: 427.5px;
         flex-shrink: 0;
         background: #D9D9D9;
         box-shadow: -1px -1px 0px 0px rgba(0, 0, 0, 0.65) inset, -2px -2px 0px 0px rgba(0, 0, 0, 0.25) inset, 2px 2px 0px 0px rgba(240, 240, 240, 0.45) inset, 1px 1px 0px 0px rgba(255, 255, 255, 0.65) inset;   

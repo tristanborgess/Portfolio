@@ -25,8 +25,9 @@ const Navigation = ({ currentPage, changePage, totalPages }) => {
 const NavigationContainer = styled.div`
   display: flex;
   justify-content: flex-end;
-  margin: 15px;
-  gap: 16px;
+  margin-top: 20px;
+  margin-right: 15px;
+  gap: 20px;
 
     @media (min-width: 601px) {
         margin: 22.5px;
@@ -41,14 +42,14 @@ const NavigationContainer = styled.div`
 
 const Button = styled.button`
     cursor: pointer;
-    width: 75px;
-    height: 23px;
+    width: 86.25px;
+    height: 26.45px;
     flex-shrink: 0;
     background: #D9D9D9;
     box-shadow: 0px 1px 0px 0px #000, 1px 1px 0px 0px #000, 1px 0px 0px 0px #000, 2px 2px 0px 0px rgba(244, 244, 244, 0.80) inset, -1px -1px 0px 0px rgba(0, 0, 0, 0.25) inset, 1px 1px 0px 0px #FFF inset;
     color: #000;
     font-family: 'VT323', monospace;
-    font-size: 13px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 12px;
