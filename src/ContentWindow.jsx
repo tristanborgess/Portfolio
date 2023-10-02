@@ -74,8 +74,8 @@ const ContentWindow = ({ data, currentTab }) => {
 };
 
 const ContentWindowContainer = styled.div`
-    width: 320px;
-    height: 265px;
+    width: 368px;
+    height: 304.75px;
     margin-top: 48px;
     flex-shrink: 0;
     border-radius: 2px;
@@ -151,11 +151,11 @@ const Text = styled.p`
 const LinkText = styled.div`
     color: #434343;
     text-align: center;
-    font-size: 11px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0.22px;
-    margin-top: 15px;
+    margin-top: 25px;
     a, a:hover, a:visited, a:active {
         color: #0d1a66;
     }
@@ -227,7 +227,7 @@ const Icon = styled.img`
 `;
 
 const Image = styled.img`
-    height: 150px;
+    height: 172.5px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
